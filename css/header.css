@@ -1,0 +1,59 @@
+header nav,
+header nav .container {
+    height: 85px;
+}
+
+header nav ul {
+    height: max-content !important;
+    line-height: normal !important;
+}
+
+header nav .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: inherit !important;
+    position: relative;
+}
+
+header nav .brand-logo img {
+    max-height: 50px;
+}
+
+header nav ul.right-align {
+    display: flex;
+}
+
+header nav a::after {
+    content: '';
+    position: relative;
+    display: block;
+    margin: 2px 0;
+    width: 100%;
+    height: 1px;
+    background-color: #616161;
+    transform-origin: 0% 50%;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: all ease-in-out .2s;
+}
+
+header nav a:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+header nav ul a {
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+header nav ul a:hover {
+    background-color: transparent;
+}
