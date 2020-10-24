@@ -64,10 +64,18 @@ header nav ul a:hover {
     background-color: transparent;
 }
 
+header nav {
+    transition: all ease .2s;
+}
+
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
+}
+
+.hide-nav {
+    top: -100px
 }
