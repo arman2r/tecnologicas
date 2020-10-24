@@ -161,7 +161,7 @@ header nav {
         height: 40px;
     }
     .show-menu .container .content-menu ul#nav-mobile {
-        height: calc(100vh - 164px) !important;
+        height: calc(100vh - 200px) !important;
         display: flex;
         flex-flow: column;
         align-self: center;
