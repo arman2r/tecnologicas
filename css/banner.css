@@ -70,10 +70,6 @@
     min-height: calc(100vh - 60px);
 }
 
-.slider .slides li {
-    height: 100%;
-}
-
 .slider .slides li .caption {
     top: 0;
     bottom: 0;
@@ -89,4 +85,24 @@
 
 .slider .indicators .indicator-item.active {
     background-color: #db971a;
+}
+
+@media(max-width:1024px) {
+    .slider,
+    .slider .slides {
+        min-height: 450px;
+    }
+}
+
+@media(max-width:599px) {
+    .slider,
+    .slider .slides {
+        min-height: 400px;
+    }
+    .slider .slides li .caption h3 {
+        font-size: 1.8rem;
+    }
+    .slider .slides li .caption h5 {
+        font-size: 1.2rem;
+    }
 }
