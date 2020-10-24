@@ -57,6 +57,7 @@ function myFunction() {
             //replace 52 with the height of your header in px
 
             header.classList.add('hide-nav');
+            header.classList.remove('show-menu')
             prevDirection = direction;
         } else if (direction === 1) {
             header.classList.remove('hide-nav');
@@ -67,3 +68,11 @@ function myFunction() {
     window.addEventListener('scroll', checkScroll);
 
 })();
+
+var btn = document.getElementById('menu-toggle');
+
+
+btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    header.classList.toggle('show-menu')
+})
