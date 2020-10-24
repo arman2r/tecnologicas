@@ -23,6 +23,10 @@ p {
     font-family: 'Rajdhani', sans-serif;
 }
 
+a {
+    color: #FF8004
+}
+
 @media(min-width:993px) {
     .container {
         width: 90%;

@@ -87,6 +87,10 @@
     z-index: 10;
 }
 
+.slider .indicators .indicator-item.active {
+    background-color: #FF8004;
+}
+
 @media(max-width:1024px) {
     .slider,
     .slider .slides {
