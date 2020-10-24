@@ -14,6 +14,18 @@
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/que-hacemos.css">
     <link rel="stylesheet" href="css/proyectos.css">
+    <style>
+        textarea {
+            min-height: 150px !important
+        }
+        
+        input:focus,
+        textarea:focus {
+            border-bottom: 1px solid #ef9c03 !important;
+            -webkit-box-shadow: 0 1px 0 0 #ef9c03 !important;
+            box-shadow: 0 1px 0 0 #ef9c03 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -253,6 +265,48 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <br><br><br>
+            <h3>Generar una cotización</h3>
+            <br>
+            <form action="" class="col s12 m12 l10 offset-l1">
+                <div class="input-fiel col s12 m6">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres">
+                </div>
+                <div class="input-fiel col s12 m6">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos">
+                </div>
+                <div class="input-fiel col s12 m6">
+                    <label for="correo">Correo</label>
+                    <input type="text" id="correo">
+                </div>
+                <div class="input-fiel col s12 m6">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono">
+                </div>
+                <div class="input-fiel col s12">
+                    <select>
+                        <option value="" disabled selected>Servicio de interés</option>
+                        <option value="1">División Plásticos</option>
+                        <option value="2">División Industrial</option>
+                        <option value="3">División Aeronáutica</option>
+                      </select>
+                    <label>Materialize Select</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Cuentanos un poco lo que quieres lograr</label>
+                </div>
+                <div class="row center">
+                    <button type="submit" class="btn waves-effect border-btn btn-flat">Enviar</button>
+                </div>
+            </form>
+
+        </div>
+        <br><br><br>
     </main>
 
     <script src="js/materialize.min.js"></script>
