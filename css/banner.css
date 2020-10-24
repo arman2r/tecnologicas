@@ -70,6 +70,10 @@
     min-height: calc(100vh - 60px);
 }
 
+.slider .slides li {
+    height: 100%;
+}
+
 .slider .slides li .caption {
     top: 0;
     bottom: 0;
@@ -81,10 +85,6 @@
 .slider .indicators {
     bottom: 70px;
     z-index: 10;
-}
-
-.slider .indicators .indicator-item.active {
-    background-color: #db971a;
 }
 
 @media(max-width:1024px) {
