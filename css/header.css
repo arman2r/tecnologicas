@@ -1,6 +1,6 @@
 header,
 header nav,
-header nav .container {
+header nav .container .content-menu {
     height: 85px;
 }
 
@@ -9,7 +9,8 @@ header nav ul {
     line-height: normal !important;
 }
 
-header nav .container {
+header nav .container .content-menu {
+    width: 100%;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,9 @@ header nav .brand-logo {
     justify-content: center;
     line-height: inherit !important;
     position: relative;
+    left: 0%;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
 }
 
 header nav .brand-logo img {
@@ -78,4 +82,27 @@ header nav {
 
 .hide-nav {
     top: -100px
+}
+
+@media(max-width:599px) {
+    header nav .brand-logo img {
+        height: 40px;
+    }
+    footer .copy {
+        width: 100%;
+        text-align: center;
+        display: block
+    }
+    footer .right {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+@media(max-width:359px) {
+    header nav .brand-logo img {
+        height: 30px;
+    }
 }
