@@ -1,6 +1,3 @@
-var toltips = document.querySelectorAll('.tooltipped');
-var instances = M.Tooltip.init(toltips);
-
 var slider = tns({
     container: '.proyectos',
     slideBy: 1,
@@ -23,4 +20,19 @@ var slider = tns({
             items: 3.3,
         }
     }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toltips = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(toltips);
+
+    document.querySelectorAll('a.link[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });

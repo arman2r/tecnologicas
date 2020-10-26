@@ -76,3 +76,20 @@ btn.addEventListener('click', function(e) {
     e.preventDefault();
     header.classList.toggle('show-menu')
 })
+
+
+
+function changeValue(valueSelected) {
+    var form = document.getElementById('cotizacionForm');
+    var selectForm = form.getElementsByTagName('select')[0];
+    var inputName = document.getElementById('nombres-cotizante').focus();
+    var selectCotizar = document.querySelectorAll('.select-cotizar')[0]
+
+    selectCotizar.classList.add('selected-option')
+    setTimeout(() => {
+        selectCotizar.classList.remove('selected-option')
+    }, 2000);
+
+    selectForm.value = valueSelected;
+    M.FormSelect.init(selectForm);
+}

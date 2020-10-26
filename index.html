@@ -176,7 +176,7 @@
                                         </div>
                                     </div>
                                     <div class="mail-cotizar">
-                                        <a href="#" class="btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
+                                        <a href="#cotizar" onclick="changeValue('division-plasticos')" class="link btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
                                             <span class="material-icons white-text">email</span>
                                         </a>
                                     </div>
@@ -196,7 +196,7 @@
                                         </div>
                                     </div>
                                     <div class="mail-cotizar">
-                                        <a href="#" class="btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
+                                        <a href="#cotizar" onclick="changeValue('division-industrial')" class="link btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
                                             <span class="material-icons white-text">email</span>
                                         </a>
                                     </div>
@@ -216,7 +216,7 @@
                                         </div>
                                     </div>
                                     <div class="mail-cotizar">
-                                        <a href="#" class="btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
+                                        <a href="#cotizar" onclick="changeValue('division-industrial')" class="link btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
                                             <span class="material-icons white-text">email</span>
                                         </a>
                                     </div>
@@ -236,7 +236,7 @@
                                         </div>
                                     </div>
                                     <div class="mail-cotizar">
-                                        <a href="#" class="btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
+                                        <a href="#cotizar" onclick="changeValue('division-plasticos')" class="link btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
                                             <span class="material-icons white-text">email</span>
                                         </a>
                                     </div>
@@ -256,7 +256,7 @@
                                         </div>
                                     </div>
                                     <div class="mail-cotizar">
-                                        <a href="#" class="btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
+                                        <a href="#cotizar" onclick="changeValue('division-industrial')" class="link btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
                                             <span class="material-icons white-text">email</span>
                                         </a>
                                     </div>
@@ -276,7 +276,7 @@
                                         </div>
                                     </div>
                                     <div class="mail-cotizar">
-                                        <a href="#" class="btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
+                                        <a href="#cotizar" onclick="changeValue('division-industrial')" class="link btn-floating btn-large waves-effect btn-flat tooltipped" data-position="top" data-tooltip="Cotizar un proyecto así">
                                             <span class="material-icons white-text">email</span>
                                         </a>
                                     </div>
@@ -353,14 +353,14 @@
 
         <div class="row">
             <br><br>
-            <div class="col s12 m12 l10 offset-l1">
+            <div id="cotizar" class="col s12 m12 l10 offset-l1">
                 <h3><b>Generar una cotización</b></h3>
                 <br><br>
             </div>
-            <form action="" class="col s12 m12 l10 offset-l1">
+            <form id="cotizacionForm" action="" class="col s12 m12 l10 offset-l1 ">
                 <div class="input-fiel col s12 m6">
-                    <label for="nombres">Nombres</label>
-                    <input type="text" id="nombres">
+                    <label for="nombres-cotizante">Nombres</label>
+                    <input type="text" id="nombres-cotizante">
                 </div>
                 <div class="input-fiel col s12 m6">
                     <label for="apellidos">Apellidos</label>
@@ -374,15 +374,17 @@
                     <label for="telefono">Teléfono</label>
                     <input type="text" id="telefono">
                 </div>
-                <div class="input-fiel col s12">
+                <br>
+                <div class="input-fiel col s12 select-cotizar">
                     <select>
                         <option value="" disabled selected>Servicio de interés</option>
-                        <option value="1">División Plásticos</option>
-                        <option value="2">División Industrial</option>
-                        <option value="3">División Aeronáutica</option>
+                        <option value="division-plasticos">División Plásticos</option>
+                        <option value="division-industrial">División Industrial</option>
+                        <option value="division-aeronautica">División Aeronáutica</option>
                       </select>
                     <label>Materialize Select</label>
                 </div>
+                <br>
                 <div class="input-field col s12">
                     <textarea id="textarea1" class="materialize-textarea"></textarea>
                     <label for="textarea1">Cuentanos un poco lo que quieres lograr</label>
