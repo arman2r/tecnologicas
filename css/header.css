@@ -101,6 +101,21 @@ header nav {
     top: -100px
 }
 
+footer .info-company ul {
+    flex-flow: column;
+}
+
+footer .info-company ul li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+footer .info-company ul li span.material-icons {
+    padding-right: 10px;
+}
+
 @media(max-width:992px) {
     header * {
         transition: all ease-in-out .2s;

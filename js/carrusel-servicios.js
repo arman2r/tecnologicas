@@ -1,26 +1,21 @@
-var toltips = document.querySelectorAll('.tooltipped');
-var instances = M.Tooltip.init(toltips);
-
 var slider = tns({
-    container: '.proyectos',
+    container: '.carrusel-servicios',
     slideBy: 1,
     mouseDrag: true,
     swipeAngle: false,
-    speed: 400,
-    autoWidth: true,
-    items: 3.3,
+    edgePadding: 20,
     nav: false,
+    loop: true,
     controlsText: ['<span class="material-icons">keyboard_arrow_left</span>', '<span class="material-icons">keyboard_arrow_right</span>'],
     responsive: {
         300: {
             items: 1,
-            autoWidth: false,
         },
         600: {
-            items: 2.2,
+            items: 2,
         },
-        900: {
-            items: 3.3,
+        1024: {
+            items: 3,
         }
     }
 });
