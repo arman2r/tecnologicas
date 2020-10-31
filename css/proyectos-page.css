@@ -29,3 +29,7 @@
     align-items: center;
     flex-flow: column;
 }
+
+.item-col a:nth-child(1) {
+    margin-top: 10px;
+}
