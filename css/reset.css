@@ -23,6 +23,11 @@ p {
     font-family: 'Rajdhani', sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 a {
     color: #FF8004
 }

@@ -1,0 +1,31 @@
+.content-items {
+    display: flex;
+    flex-flow: row;
+}
+
+.content-items h3 {
+    display: block;
+    writing-mode: tb;
+    font-size: 1.3rem;
+    text-orientation: sideways;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(-180deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(-180deg);
+    -o-transform: rotateX(0deg) rotateY(0deg) rotateZ(-180deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(-180deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(-180deg);
+}
+
+.item-col {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}

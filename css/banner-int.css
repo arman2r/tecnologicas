@@ -1,0 +1,35 @@
+.banner-interno,
+.banner-interno .parallax-container {
+    max-height: 250px;
+    position: relative;
+}
+
+.banner-interno .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    width: 100%;
+    height: fit-content;
+    bottom: 0
+}
+
+.banner-interno .container {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.banner-interno .container nav {
+    background-color: transparent;
+}
+
+.title-banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
