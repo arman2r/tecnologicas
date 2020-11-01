@@ -1,3 +1,7 @@
+.equipo {
+    position: relative;
+}
+
 .equipo .card .card-image .card-title {
     line-height: 15px;
     min-height: 20%;
@@ -52,6 +56,8 @@
 
 .equipo .card .card-image .sub-content p {
     font-size: .9rem;
+    max-height: 100px;
+    overflow: hidden;
 }
 
 .equipo .card:hover .card-image .sub-content {
@@ -62,7 +68,64 @@
     transition-delay: .1s;
 }
 
+.equipo .card .card-image .card-title {
+    max-width: calc(100% - 30%);
+}
+
+.equipo .card .card-image .card-title p {
+    padding: 5px 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .equipo .card:hover .card-image .card-title {
+    max-width: 100%;
     min-height: 100%;
     transition: min-height .2s ease-in-out;
+}
+
+button[data-controls] {
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: inherit;
+    margin-top: -18px;
+    z-index: 100;
+    background: transparent;
+}
+
+button[data-controls] span {
+    font-size: 5rem;
+    color: rgba(0, 0, 0, .5)
+}
+
+button[data-controls="prev"] {
+    left: -10px;
+    transition: all ease .2s;
+}
+
+button[data-controls="prev"]:hover {
+    left: -20px;
+}
+
+button[data-controls="prev"]:hover span {
+    color: rgba(0, 0, 0, .8)
+}
+
+button[data-controls="next"] {
+    right: -10px;
+    transition: all ease .2s;
+}
+
+button[data-controls="next"]:hover {
+    right: -20px;
+}
+
+button[data-controls="next"]:hover span {
+    color: rgba(0, 0, 0, .8)
 }

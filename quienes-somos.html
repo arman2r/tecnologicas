@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner-int.css">
     <link rel="stylesheet" href="css/proyectos-page.css">
+    <link rel="stylesheet" href="css/equipo.css">
     <style>
+        .collection a.active {
+            background-color: #ef9d05 !important;
+            color: #fff !important
+        }
+        
         @media(max-width: 991px) {
             .content-items {
                 flex-flow: column;
-                flex-direction: column-reverse;
             }
         }
     </style>
@@ -35,8 +40,8 @@
 
                     <ul id="nav-mobile" class="right">
                         <li><a href="./" class="grey-text text-darken-2">INICIO</a></li>
-                        <li><a href="proyectos.html" class="active grey-text text-darken-2">PROYECTOS</a></li>
-                        <li><a href="quienes-somos.html" class="grey-text text-darken-2">QUIÉNES SOMOS</a></li>
+                        <li><a href="proyectos.html" class="grey-text text-darken-2">PROYECTOS</a></li>
+                        <li><a href="quienes-somos.html" class="active grey-text text-darken-2">QUIÉNES SOMOS</a></li>
                         <li><a href="contactenos.html" class="grey-text text-darken-2">CONTÁCTENOS</a></li>
                         <li class="example-spacer hide-on-large-only"></li>
                         <li class="redes-header center hide-on-large-only">
@@ -73,29 +78,148 @@
     </section>
     <main class="container">
         <div class="row content-items">
-            <div class="col s12 m12 l9">
-                <h2><sub>TECNOLOGICA S.A.S …División Plásticos </sub></h2>
-                <br>
-                <br>
-                <article>
-                    <p class="flow-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga impedit doloremque sequi deleniti odio, vero obcaecati natus, expedita ipsum itaque aliquam nemo tempore labore iure eaque iste fugiat! Esse, quam.
-                        <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga impedit doloremque sequi deleniti odio, vero obcaecati natus, expedita ipsum itaque aliquam nemo tempore labore iure eaque iste fugiat! Esse, quam. Lorem ipsum,
-                        dolor sit amet consectetur adipisicing elit. Fuga impedit doloremque sequi deleniti odio, vero obcaecati natus, expedita ipsum itaque aliquam nemo tempore labore iure eaque iste fugiat! Esse, quam.
-                        <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga impedit doloremque sequi deleniti odio, vero obcaecati natus, expedita ipsum itaque aliquam nemo tempore labore iure eaque iste fugiat! Esse, quam.
-                        <br><br>
-                    </p>
-                </article>
-            </div>
-            <div class="col s12 m12 l3">
-                <ul class="collection with-header no-border" style="margin:20px 0 0 0;position: sticky;top:70px">
+            <div class="col s12 m12 l3 xl2 hide-on-med-and-down">
+                <ul class="collection with-header no-border" style="margin:20px 0 0 0;position: sticky;top:70px;border-left:0;border-right: 1px solid #e0e0e0 !important">
                     <li class="collection-header">
                         <h5>Categorías</h5>
                     </li>
-                    <a href="proyectos.html#division-plasticos" class="collection-item orange-text">División plasticos</a>
-                    <a href="proyectos.html#division-industrial" class="collection-item orange-text">División Industrial</a>
-                    <a href="proyectos.html#division-aeronautica" class="collection-item orange-text">División Aeronáutica</a>
+                    <a href="#nuestra-organizacion" class="collection-item orange-text">Nuestra organización</a>
+                    <a href="#quienes-somos" class="collection-item orange-text">Quiénes somos</a>
+                    <a href="#que-hacemos" class="collection-item orange-text">Qué hacemos</a>
+                    <a href="#donde-estaremos" class="collection-item orange-text">Donde estaremos</a>
                 </ul>
+            </div>
+            <div class="col s12 m12 l9 xl10">
+                <section id="nuestra-organizacion" class="medium-top-space scrollspy">
+                    <h2><sub>Nuestra Organización</sub></h2>
+                    <br>
+                    <br>
+                    <p>
+                        La empresa fue fundada en Abril de 2018 con el objetivo de agrupar nuestras fortalezas en el mercado y con esto iniciar un emprendimiento dirigido a alcanzar el éxito particular gracias a al experiencia de cada uno de sus socios.
+                    </p>
+                    <h4><sub>Contamos con el siguiente equipo de trabajo:</sub></h4>
+                    <br></br>
+                    <div class="row" style="position: relative;">
+                        <div class="equipo">
+                            <div class="card no-shadow">
+                                <div class="card-image">
+                                    <img src="img/equipo/ingeniero.jpg" alt="ceo">
+                                    <div class="card-title white-text">
+                                        <p>Ing. Dr. Oscar F. Contento R.</p>
+                                        <sub>Director General.</sub>
+                                    </div>
+                                    <div class="sub-content white-text">
+                                        <div>
+                                            <h5>Ingeniero Químico</h5>
+                                            <p>Ingeniero Químico de la Universidad Nacional y Doctor en Ingeniería Ambiental, Director General.</p>
+                                            <a href="mailto:ofernando@tecnologicas.com">ofernando@tecnologicas.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card no-shadow">
+                                <div class="card-image">
+                                    <img src="img/equipo/directora-operaciones.jpg" alt="Directora de operaciones">
+                                    <div class="card-title white-text">
+                                        <p>Ing. Luis E. Porras D.</p>
+                                        <sub>Director Financiero.</sub>
+                                    </div>
+                                    <div class="sub-content white-text">
+                                        <div>
+                                            <h5>Ingeniero Químico</h5>
+                                            <p>Ingeniero Químico de la Universidad Nacional, 20 años de experiencia en la industria de la construcción. Director Financiero.</p>
+                                            <a href="mailto:luisporras@tecnologicas.com">luisporras@tecnologicas.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card no-shadow">
+                                <div class="card-image">
+                                    <img src="img/equipo/contador.jpg" alt="contador">
+                                    <div class="card-title white-text">
+                                        <p>Ing. J. Mauricio Gómez S.</p>
+                                        <sub>Director Operativo.</sub>
+                                    </div>
+                                    <div class="sub-content white-text">
+                                        <div>
+                                            <h5>Contador público</h5>
+                                            <p>La ciencia de los números nos permite organizar mejor nuestra vida.</p>
+                                            <a href="gabrielsoto@tecnologicas.com">gabrielsoto@tecnologicas.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card no-shadow">
+                                <div class="card-image">
+                                    <img src="img/equipo/contador.jpg" alt="contador">
+                                    <div class="card-title white-text">
+                                        <p>TJ. William A. Gomez S.</p>
+                                        <sub>Técnico Jefe de mantenimiento Aeronáutico.</sub>
+                                    </div>
+                                    <div class="sub-content white-text">
+                                        <div>
+                                            <h5>Técnico FAA.</h5>
+                                            <p>Técnico FAA especialista en línea de vuelo Bell 212-412 Helicopter, Técnico Jefe de mantenimiento Aeronáutico. 28 años en a industria Aeronáutica.</p>
+                                            <a href="twilliam@tecnologicas.com">twilliam@tecnologicas.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card no-shadow">
+                                <div class="card-image">
+                                    <img src="img/equipo/contador.jpg" alt="contador">
+                                    <div class="card-title white-text">
+                                        <p>TE. Nestor E. Abella S.</p>
+                                        <sub>Técnico Jefe de mantenimiento Aeronáutico.</sub>
+                                    </div>
+                                    <div class="sub-content white-text">
+                                        <div>
+                                            <h5>Técnico en topografía.</h5>
+                                            <p>Técnico especialista en topografía y levantamiento de predios GPS, 18 años en la industria de la construcción.</p>
+                                            <a href="nestorabella@tecnologicas.com">twilliam@tecnologicas.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </section>
+                <section id="quienes-somos" class="scrollspy medium-top-space">
+                    <h2><sub>Quiénes Somos</sub></h2>
+                    <br>
+                    <br>
+                    <article>
+                        <p class="flow-text">
+                            Somos una empresa enfocada en resolver al cliente problemas en diferentes campos que cubren las actividades de ingeniería, desde la asesoría hasta la gestión y ejecución de proyectos que garanticen la confiabilidad, el avance tecnológico y estabilidad
+                            en el mercado.
+                            <br><br> Gracias a la experiencia, conocimiento y desarrollo de nuestro equipo de ingenieros podemos desarrollar actividades de diagnostico, diseño, planeación, construcción, montajes, mantenimiento, adecuación, reparación
+                            y conversión tecnológica solicitados por la industria.
+                        </p>
+                    </article>
+                </section>
+                <section id="que-hacemos" class="scrollspy medium-top-space">
+                    <h2><sub>Qué hacemos</sub></h2>
+                    <br>
+                    <br>
+                    <article>
+                        <p class="flow-text">
+                            Convertimos la necesidad del cliente en el desarrollo de un proyecto individualizado para obtener la solución mas adecuada y económica acorde con las actividades desarrolladas en conjunto con nuestros proveedores, nuestro personal y nuestros clientes.
+                        </p>
+                    </article>
+                </section>
+                <section id="donde-estaremos" class="scrollspy medium-top-space">
+                    <h2><sub>Dónde Estaremos</sub></h2>
+                    <br>
+                    <br>
+                    <article>
+                        <p class="flow-text">
+                            Seguiremos siendo la mejor opción para nuestros clientes, solucionando las necesidades y siendo reconocidos en el mercado por los resultados obtenidos que reflejen cambios de alto nivel tanto propios de la organización como de nuestros clientes.
+                        </p>
+                    </article>
+                </section>
+
             </div>
         </div>
         <div class="fixed-action-btn social-feed-fixed scale-transition">
@@ -212,6 +336,8 @@
 
     <script src="js/materialize.min.js"></script>
     <script src="js/header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/equipo.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.parallax');
