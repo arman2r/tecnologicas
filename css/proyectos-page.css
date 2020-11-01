@@ -49,6 +49,7 @@
     position: relative;
     width: 100%;
     min-height: 380px;
+    display: grid
 }
 
 .card-project,
@@ -137,6 +138,55 @@
     color: #FF8004 !important
 }
 
+@media(max-width:991px) {
+    .card-project {
+        min-height: 350px;
+    }
+    .card-project .image-mask {
+        height: 200px;
+        overflow: hidden;
+    }
+    .card-project .image-mask a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0 0
+    }
+    .card-project:hover .image-mask {
+        height: 200px;
+        overflow: hidden;
+    }
+    .card-project .image-mask img {
+        width: inherit;
+        height: 100%;
+    }
+}
+
+@media(max-width:800px) {
+    .content-items h3 {
+        padding: 10px;
+    }
+    .card-project {
+        min-height: 300px;
+    }
+    .card-project .image-mask {
+        height: 120px;
+        overflow: hidden;
+    }
+    .card-project:hover .image-mask {
+        height: 140px;
+        overflow: hidden;
+    }
+    .card-project .title-card {
+        padding: 15px 10px 15px 20px;
+    }
+    .card-project .image-mask img {
+        width: inherit;
+        height: 100%;
+    }
+}
+
 @media(max-width:599px) {
     .content-items h3 {
         padding: 10px;
@@ -149,11 +199,13 @@
         overflow: hidden;
     }
     .card-project:hover .image-mask {
-        height: 150px;
+        height: 180px;
         overflow: hidden;
     }
     .card-project .image-mask img {
-        height: 100%;
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
     }
     .card-project .title-card {
         padding: 15px 10px 15px 25px;
