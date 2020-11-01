@@ -30,6 +30,109 @@
     flex-flow: column;
 }
 
+.item-col a {
+    transition: color ease-in-out .2s;
+}
+
+.item-col a.active {
+    color: #FF8004 !important;
+    transition: color ease-in-out .6s;
+}
+
 .item-col a:nth-child(1) {
     margin-top: 10px;
+}
+
+.card-project {
+    padding: 23px 20px 0 0px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    min-height: 380px;
+}
+
+.card-project,
+.card-project * {
+    transition: all ease-in-out .2s;
+}
+
+.card-project::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #212121;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    transform: scale(.94);
+    transition: all ease-in-out .2s;
+}
+
+.card-project .image-mask {
+    width: 98%;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.card-project .image-mask img {
+    width: 100%;
+}
+
+.card-project .title-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
+    position: relative;
+    z-index: 10;
+    padding: 10px 20px 30px 35px;
+    box-sizing: border-box;
+}
+
+.card-project .title-card,
+.card-project .title-card * {
+    transition: all ease .2s;
+}
+
+.card-project .title-card h4 {
+    font-size: 1.4rem;
+}
+
+.card-project .title-card h5 {
+    font-size: 1.1rem;
+}
+
+.card-project:hover {
+    padding: 10px 10px 0 10px;
+}
+
+.card-project:hover .image-mask {
+    width: 100%;
+    height: 260px;
+}
+
+.card-project:hover::before {
+    transform: scaleX(1)
+}
+
+.card-project:hover .title-card {
+    padding: 20px 10px 20px;
+}
+
+.card-project:hover .title-card a {
+    color: #FF8004 !important
+}
+
+.card-project .title-card sub {
+    letter-spacing: .5px;
+}
+
+.card-project:hover .title-card,
+.card-project:hover .title-card i {
+    color: #FF8004 !important
 }
