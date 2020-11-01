@@ -136,3 +136,32 @@
 .card-project:hover .title-card i {
     color: #FF8004 !important
 }
+
+@media(max-width:599px) {
+    .content-items h3 {
+        padding: 10px;
+    }
+    .card-project {
+        min-height: 280px;
+    }
+    .card-project .image-mask {
+        height: 150px;
+        overflow: hidden;
+    }
+    .card-project:hover .image-mask {
+        height: 150px;
+        overflow: hidden;
+    }
+    .card-project .image-mask img {
+        height: 100%;
+    }
+    .card-project .title-card {
+        padding: 15px 10px 15px 25px;
+    }
+    .card-project .title-card h4 {
+        font-size: 1.1rem;
+    }
+    .card-project .title-card h5 {
+        font-size: .9rem;
+    }
+}
