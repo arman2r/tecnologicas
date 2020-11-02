@@ -6,7 +6,6 @@ var slider = tns({
     speed: 400,
     items: 3,
     nested: "inner",
-    edgePadding: 20,
     nav: false,
     controlsText: ['<span class="material-icons">keyboard_arrow_left</span>', '<span class="material-icons">keyboard_arrow_right</span>'],
     responsive: {
