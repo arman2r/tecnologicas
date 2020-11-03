@@ -75,7 +75,6 @@
     width: 100%;
     height: 100%;
     background-color: #493E2A;
-    transform-origin: ;
     transform-origin: 0% 0%;
     transform: scale3d(0, 1, 1);
     transition: all ease .2s;
