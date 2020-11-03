@@ -176,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mascara-image left-content">
+        <div id="division-plasticos" class="row mascara-image left-content scrollspy">
             <div class="parallax-container valign-wrapper">
                 <div class="parallax" data-aos="zoom-out" data-aos-offset="200" data-aos-duration="500" data-aos-delay="400"><img src="img/proyectos/1.jpg" alt="proyectos"></div>
             </div>
@@ -206,7 +206,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mascara-image right-content">
+        <div id="division-industrial" class="row mascara-image right-content scrollspy">
             <div class="parallax-container valign-wrapper">
                 <div class="parallax" data-aos="zoom-out" data-aos-offset="200" data-aos-duration="500" data-aos-delay="400"><img src="img/proyectos/ing-civil.jpg" alt="proyectos"></div>
             </div>
@@ -234,7 +234,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mascara-image left-content">
+        <div id="division-aeronautica" class="row mascara-image left-content scrollspy">
             <div class="parallax-container valign-wrapper">
                 <div class="parallax" data-aos="zoom-out" data-aos-offset="200" data-aos-duration="500" data-aos-delay="400"><img src="img/proyectos/helicoptero.jpg" alt="proyectos"></div>
             </div>
@@ -368,6 +368,11 @@
             var elems = document.querySelectorAll('.parallax');
             var instances = M.Parallax.init(elems);
             AOS.init();
+
+            var scroll = document.querySelectorAll('.scrollspy');
+            var instances = M.ScrollSpy.init(scroll, {
+                scrollOffset: 80
+            });
         });
     </script>
 </body>
