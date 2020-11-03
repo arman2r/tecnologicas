@@ -1,5 +1,6 @@
 .mascara-image {
     position: relative;
+    overflow: hidden;
 }
 
 .mascara-image.left-content::before {
