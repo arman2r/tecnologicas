@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <title>Contácto - Tecnologicas</title>
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
+    />
+    <!--[if (lt IE 9)
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script
+    ><![endif]-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/banner-int.css" />
+    <!-- <link rel="stylesheet" href="css/proyectos-page.css" /> -->
+    <!-- <link rel="stylesheet" href="css/equipo.css" /> -->
+    <style>
+      .collection a.active {
+        background-color: #ef9d05 !important;
+        color: #fff !important;
+      }
+
+      sub {
+        bottom: 0;
+      }
+
+      textarea {
+        min-height: 150px !important;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-bottom: 1px solid #ef9c03 !important;
+        -webkit-box-shadow: 0 1px 0 0 #ef9c03 !important;
+        box-shadow: 0 1px 0 0 #ef9c03 !important;
+      }
+
+      @media (max-width: 991px) {
+        .content-items {
+          flex-flow: column;
+        }
+      }
+      .content-items {
+        display: flex;
+        flex-flow: row;
+      }
+
+      .feed .btn img {
+        width: 20px;
+        margin: 10px;
+      }
+      .feed:hover .btn {
+        border: none;
+      }
+      .feed .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        transition: all ease 0.2s;
+      }
+
+      .feed .btn:hover {
+        border: 1px solid #ff7f00 !important;
+        color: #ff7f00;
+      }
+
+      .feed .btn:last-child {
+        border-right: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav id="header" class="white no-shadow">
+        <div class="container">
+          <div class="content-menu">
+            <div class="brand-toggle">
+              <a href="./" class="brand-logo"
+                ><img src="img/logo-tecnologicas-h.png" alt="Tecnologicas"
+              /></a>
+              <a href="#" id="menu-toggle" class="sidenav-trigger"></a>
+            </div>
+
+            <ul id="nav-mobile" class="right">
+              <li><a href="./" class="grey-text text-darken-2">INICIO</a></li>
+              <li>
+                <a href="proyectos.html" class="grey-text text-darken-2"
+                  >PROYECTOS</a
+                >
+              </li>
+              <li>
+                <a href="servicios.html" class="grey-text text-darken-2"
+                  >SERVICIOS</a
+                >
+              </li>
+              <li>
+                <a href="quienes-somos.html" class="grey-text text-darken-2"
+                  >QUIÉNES SOMOS</a
+                >
+              </li>
+              <li>
+                <a href="contacto.html" class="grey-text text-darken-2 active"
+                  >CONTÁCTENOS</a
+                >
+              </li>
+              <li class="example-spacer hide-on-large-only"></li>
+              <li class="redes-header center hide-on-large-only">
+                <a href="#" class="btn-floating btn-flat waves-effect"
+                  ><img src="img/whatsapp.png" alt="whatsapp - tecnologicas"
+                /></a>
+                <a href="#" class="btn-floating btn-flat waves-effect"
+                  ><img src="img/instagram.png" alt="instagram - tecnologicas"
+                /></a>
+                <a href="#" class="btn-floating btn-flat waves-effect"
+                  ><img src="img/facebook.png" alt="facebook - tecnologicas"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="row banner-interno">
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="img/proyectos/factory.jpg" alt="proyectos" />
+        </div>
+      </div>
+      <div class="container white-text">
+        <div class="col s12">
+          <nav class="no-shadow">
+            <div class="nav-wrapper">
+              <div class="col s12">
+                <a href="./" class="breadcrumb">Inicio</a>
+                <a href="contacto.html" class="breadcrumb">Contáctenos</a>
+              </div>
+            </div>
+          </nav>
+          <div class="title-banner">
+            <h1><b>Contáctenos</b></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="container">
+      <div class="row content-items">
+        <div class="col s12 m12 l3 xl2 hide-on-med-and-down">
+          <ul
+            class="collection with-header no-border"
+            style="
+              margin: 20px 0 0 0;
+              position: sticky;
+              top: 70px;
+              border-left: 0;
+              border-right: 1px solid #e0e0e0 !important;
+            "
+          >
+            <li class="collection-header">
+              <h5>Medios</h5>
+            </li>
+            <a href="#telefonos" class="collection-item orange-text"
+              >Teléfonos</a
+            >
+            <a href="#ubicacion" class="collection-item orange-text"
+              >Ubicación</a
+            >
+            <a href="#escribenos" class="collection-item orange-text"
+              >Escríbenos</a
+            >
+            <a href="#siguenos" class="collection-item orange-text">Siguenos</a>
+          </ul>
+        </div>
+        <div class="col s12 m12 l9 xl10">
+          <section id="telefonos" class="medium-top-space scrollspy">
+            <h2 style="display: flex; align-items: center">
+              <span
+                class="material-icons"
+                style="font-size: 2.8rem; margin: 0 10px 0 0"
+              >
+                contact_phone </span
+              ><sub style="bottom: 0">Teléfonos</sub>
+            </h2>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div class="col s12 m6 l4" style="border-right: 1px solid #ccc">
+              <h3 style="display: flex; align-items: center">
+                <span
+                  class="material-icons"
+                  style="font-size: 2rem; margin: 0 10px 0 0"
+                >
+                  phone </span
+                ><sub>601 655 4029</sub>
+              </h3>
+            </div>
+            <div class="col s12 m6 l4" style="border-right: 1px solid #ccc">
+              <h3 style="display: flex; align-items: center">
+                <span
+                  class="material-icons"
+                  style="font-size: 2rem; margin: 0 10px 0 0"
+                >
+                  smartphone </span
+                ><sub>301 4567 654</sub>
+              </h3>
+            </div>
+            <div class="col s12 m6 l4">
+              <h3 style="display: flex; align-items: center">
+                <span
+                  class="material-icons"
+                  style="font-size: 2rem; margin: 0 10px 0 0"
+                >
+                  smartphone </span
+                ><sub>315 223 3342</sub>
+              </h3>
+            </div>
+          </section>
+          <br />
+          <div class="divider"></div>
+          <br />
+          <section id="ubicacion" class="scrollspy medium-top-space">
+            <h2><sub>Ubicación</sub></h2>
+            <br />
+            <div class="divider"></div>
+            <br />
+
+            <div class="col s12">
+              <h3 style="display: flex; align-items: center">
+                <span
+                  class="material-icons"
+                  style="font-size: 2rem; margin: 0 10px 0 0"
+                >
+                  location_on </span
+                ><sub>Calle 71B #81, Bogotá, Col</sub>
+              </h3>
+            </div>
+            <br />
+            <br /><br />
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="100%"
+                  height="400"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=calle%2071b-81&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://123movies-to.org">123movies</a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 400px;
+                    width: 100%;
+                  }</style
+                ><a href="https://www.embedgooglemap.net"
+                  >html google map embed</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 400px;
+                    width: 100%;
+                  }
+                </style>
+              </div>
+            </div>
+          </section>
+          <section id="escribenos" class="scrollspy medium-top-space">
+            <h2><sub>Escríbenos</sub></h2>
+            <br />
+            <br />
+            <article class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="nombres" type="text" class="validate" />
+                    <label for="nombres">Nombres</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="apellidos" type="text" class="validate" />
+                    <label for="apellidos">Apellidos</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="telefono" type="tel" class="validate" />
+                    <label for="telefono">Teléfono</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="correo" type="email" class="validate" />
+                    <label for="correo">Correo</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <textarea
+                      id="comentarios"
+                      class="materialize-textarea"
+                    ></textarea>
+                    <label for="comentarios">Comentarios..</label>
+                  </div>
+                </div>
+              </form>
+            </article>
+          </section>
+          <section id="siguenos" class="scrollspy medium-top-space">
+            <h2><sub>Siguenos</sub></h2>
+            <br />
+            <div class="divider"></div>
+            <br />
+            <div class="row feed">
+              <a class="btn btn-large btn-flat col s6 m4">
+                <img
+                  src="img/facebook1.png"
+                  alt="facebook - tecnologicas sas"
+                />
+                Facebook</a
+              >
+              <a class="btn btn-large btn-flat col s6 m4">
+                <img
+                  src="img/instagram1.png"
+                  alt="instagram - tecnologicas sas"
+                />
+                Instagram</a
+              >
+              <a class="btn btn-large btn-flat col s6 m4">
+                <img
+                  src="img/whatsapp1.png"
+                  alt="whatsapp - tecnologicas sas"
+                />
+                Facebook</a
+              >
+            </div>
+            <br />
+            <div class="divider"></div>
+          </section>
+          <br />
+          <br />
+        </div>
+      </div>
+      <div class="fixed-action-btn social-feed-fixed scale-transition">
+        <a class="btn-floating btn-large center">
+          <i class="large material-icons" style="width: 25px">shared</i>
+        </a>
+        <ul>
+          <li>
+            <a class="btn-floating center face"
+              ><img
+                style="width: 25px; margin: 7.2px 0"
+                src="img/facebook.png"
+                alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a class="btn-floating center insta"
+              ><img
+                style="width: 25px; margin: 7.2px 0"
+                src="img/instagram.png"
+                alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a class="btn-floating center whatsapp"
+              ><img
+                style="width: 25px; margin: 7.2px 0"
+                src="img/whatsapp.png"
+                alt="whatsapp"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="page-footer grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col m12 l4 s12 small-top-space">
+            <h5 class="white-text">TECNOLOGICA S.A.S</h5>
+            <br />
+            <p class="grey-text text-lighten-4 col s12">
+              Somos una empresa enfocada en resolver al cliente problemas en
+              diferentes campos que cubren las actividades de ingeniería, desde
+              la asesoría hasta la gestión y ejecución de proyectos que
+              garanticen la confiabilidad, el avance tecnológico y estabilidad
+              en el mercado.
+            </p>
+            <br />
+            <a href="#" class="btn border-btn btn-flat white-text waves-effect"
+              >Ver más</a
+            >
+          </div>
+          <div class="col s12 m12 l8 small-top-space">
+            <div class="row">
+              <div class="col m3 s12 l2">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li>
+                    <a class="grey-text text-lighten-3" href="./">Inicio</a>
+                  </li>
+                  <li>
+                    <a class="grey-text text-lighten-3" href="proyectos.html"
+                      >Proyectos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="grey-text text-lighten-3" href="servicios.html"
+                      >servicios</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="grey-text text-lighten-3"
+                      href="quienes-somos.html"
+                      >Quiénes somos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="grey-text text-lighten-3" href="contacto.html"
+                      >Contáctenos</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col s12 m9 l10">
+                <div class="col s12 m12 l6 info-company">
+                  <h5>Contacto</h5>
+                  <ul>
+                    <li>
+                      <span class="material-icons">location_on</span>
+                      <span>CARRERA 73 A 74 B 32, BOGOTA, BOGOTA</span>
+                    </li>
+                    <li>
+                      <span class="material-icons">phone</span>
+                      <span>(1)5400672</span>
+                    </li>
+                    <li>
+                      <span class="material-icons">mail</span>
+                      <span>info@tecnologica.com</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col s12 m12 l6">
+                  <h5>Suscribete a nuestro boletín</h5>
+                  <form action="">
+                    <div class="input-field">
+                      <label for="Email">Email</label>
+                      <input type="text" id="Email" />
+                      <i
+                        class="material-icons prefix"
+                        style="font-size: 1.5rem; right: -20px"
+                        >send</i
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="row center">
+              <div class="col s4 m3 l3 offset-l4">
+                <a href="https://www.plastcontrol.de/en/home/">
+                  <img
+                    src="img/plast-control-2.png"
+                    style="margin: 3px 0"
+                    class="responsive-img"
+                    alt="plast control - aliado"
+                  />
+                </a>
+              </div>
+              <div class="col s4 m3 l2">
+                <a href="https://www.softal.de/" target="_blank">
+                  <img
+                    src="img/softal-2.png"
+                    class="responsive-img"
+                    alt="plast control - aliado"
+                  />
+                </a>
+              </div>
+              <div class="col s4 m3 l2">
+                <a
+                  href="https://www.nordson.com/en/divisions/polymer-processing-systems"
+                  target="_blank"
+                >
+                  <img
+                    src="img/nordson-2.png"
+                    class="responsive-img"
+                    alt="plast control - aliado"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <span class="copy">© 2020 Tecnologicas s.a.s</span>
+          <div class="right">
+            <a
+              style="margin: 0px 10px"
+              class="grey-text text-lighten-4"
+              href="#!"
+            >
+              <img style="width: 30px" src="img/facebook.png" alt="facebook" />
+            </a>
+            <a
+              style="margin: 0px 10px"
+              class="grey-text text-lighten-4"
+              href="#!"
+            >
+              <img
+                style="width: 30px"
+                src="img/instagram.png"
+                alt="instagram"
+              />
+            </a>
+            <a
+              style="margin: 0px 10px"
+              class="grey-text text-lighten-4"
+              href="#!"
+            >
+              <img style="width: 30px" src="img/whatsapp.png" alt="whatsapp" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/header.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+    <!-- <script src="js/equipo.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".parallax");
+        var instances = M.Parallax.init(elems);
+        var drop = document.querySelectorAll(".dropdown-trigger");
+        var instances = M.Dropdown.init(drop, {
+          constrainWidth: false,
+          coverTrigger: false,
+        });
+
+        var scroll = document.querySelectorAll(".scrollspy");
+        var instances = M.ScrollSpy.init(scroll, {
+          scrollOffset: 80,
+        });
+
+        var fixedBtn = document.querySelectorAll(".fixed-action-btn");
+        var instances = M.FloatingActionButton.init(fixedBtn);
+
+        document.addEventListener("scroll", () => {
+          var footer = document.querySelectorAll("footer")[0];
+          var topFooter = footer.scrollHeight;
+          if (document.documentElement.scrollTop > topFooter) {
+            fixedBtn[0].classList.add("scale-out");
+          } else {
+            fixedBtn[0].classList.remove("scale-out");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

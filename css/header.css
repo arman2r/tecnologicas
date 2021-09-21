@@ -1,241 +1,273 @@
 header,
 header nav,
 header nav .container .content-menu {
-    height: 85px;
+  height: 85px;
 }
 
 header nav ul#nav-mobile {
-    height: max-content !important;
-    line-height: normal !important;
+  height: max-content !important;
+  line-height: normal !important;
 }
 
 header nav .container .content-menu {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: wrap;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
 }
 
 header nav .brand-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: inherit !important;
-    position: relative;
-    left: 0%;
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: inherit !important;
+  position: relative;
+  left: 0%;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 header nav .sidenav-trigger {
-    margin: 0 0 0 18px
+  margin: 0 0 0 18px;
 }
 
 header nav .sidenav-trigger::before {
-    font-family: 'Material Icons';
-    content: "menu";
-    position: relative;
-    font-size: 24px;
-    display: inline-block;
-    vertical-align: middle;
-    transform: rotate(0deg);
-    transition: all ease .2s;
-    color: #333
+  font-family: "Material Icons";
+  content: "menu";
+  position: relative;
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: rotate(0deg);
+  transition: all ease 0.2s;
+  color: #333;
 }
 
 header nav .brand-logo img {
-    max-height: 50px;
+  max-height: 50px;
 }
 
 header nav ul#nav-mobile.right {
-    display: flex;
+  display: flex;
 }
 
 header nav a::after {
-    content: '';
-    position: relative;
-    display: block;
-    margin: 2px 0;
-    width: 100%;
-    height: 1px;
-    background-color: #616161;
-    transform-origin: 0% 50%;
-    transform: scaleX(0);
-    opacity: 0;
-    transition: all ease-in-out .2s;
+  content: "";
+  position: relative;
+  display: block;
+  margin: 2px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #616161;
+  transform-origin: 0% 50%;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: all ease-in-out 0.2s;
 }
 
 header nav a:hover::after {
-    transform: scaleX(1);
-    opacity: 1;
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 header nav a.active::after {
-    transform: scaleX(1);
-    opacity: 1;
+  transform: scaleX(1);
+  opacity: 1;
+  background-color: #ff7e00;
 }
 
 header nav ul#nav-mobile a {
-    letter-spacing: 1px;
-    font-weight: 500;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 header nav ul#nav-mobile a:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 header nav {
-    transition: all ease .2s;
+  transition: all ease 0.2s;
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .hide-nav {
-    top: -100px
+  top: -100px;
 }
 
 footer .info-company ul {
-    flex-flow: column;
+  flex-flow: column;
 }
 
 footer .info-company ul li {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    font-size: 1.2rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 footer .info-company ul li span.material-icons {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
-@media(max-width:992px) {
-    header * {
-        transition: all ease-in-out .2s;
-    }
-    header,
-    header nav,
-    header nav .container .content-menu {
-        height: max-content !important;
-    }
-    header nav .container .content-menu ul#nav-mobile,
-    header nav .container .content-menu ul#nav-mobile li {
-        display: block;
-        width: 100%;
-        float: none;
-        text-align: center;
-    }
-    header nav .container .content-menu ul#nav-mobile {
-        height: 0px !important;
-        overflow: hidden;
-        display: flex;
-        flex-flow: column;
-        align-self: center;
-        justify-content: center;
-    }
-    header nav .container .content-menu ul#nav-mobile li {
-        width: max-content;
-        padding: 10px 0;
-    }
-    header nav .container .content-menu ul#nav-mobile li a {
-        font-size: 1.8rem;
-    }
-    header nav .container .content-menu .brand-toggle {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .show-menu {
-        background: rgba(255, 255, 255, 0);
-        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 59%, rgba(178, 178, 178, 0) 76%, rgba(69, 69, 69, 0.55) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(59%, rgba(255, 255, 255, 0)), color-stop(76%, rgba(178, 178, 178, 0)), color-stop(100%, rgba(69, 69, 69, 0.55)));
-        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 59%, rgba(178, 178, 178, 0) 76%, rgba(69, 69, 69, 0.55) 100%);
-        background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 59%, rgba(178, 178, 178, 0) 76%, rgba(69, 69, 69, 0.55) 100%);
-        background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 59%, rgba(178, 178, 178, 0) 76%, rgba(69, 69, 69, 0.55) 100%);
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 59%, rgba(178, 178, 178, 0) 76%, rgba(69, 69, 69, 0.55) 100%);
-    }
-    .show-menu .brand-toggle {
-        width: 100%;
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .show-menu .brand-logo {
-        margin: 20px 0
-    }
-    .show-menu .brand-logo img {
-        height: 40px;
-    }
-    .show-menu .container .content-menu ul#nav-mobile {
-        height: calc(100vh - 200px) !important;
-        display: flex;
-        flex-flow: column;
-        align-self: center;
-        justify-content: center;
-        overflow-y: auto;
-    }
-    header nav .container .content-menu ul#nav-mobile li {
-        width: max-content;
-        padding: 10px 0;
-    }
-    header nav .container .content-menu ul#nav-mobile li a {
-        font-size: 1.8rem;
-    }
-    .redes-header {
-        width: 100% !important;
-    }
-    .redes-header img {
-        width: 25px;
-    }
-    .redes-header a {
-        line-height: 50px;
-    }
-    .show-menu .sidenav-trigger::before {
-        font-family: 'Material Icons';
-        content: "close";
-        position: relative;
-        font-size: 2rem;
-        display: inline-block;
-        vertical-align: middle;
-        transform: rotate(180deg);
-        transition: all ease .2s;
-        color: #333
-    }
+@media (max-width: 992px) {
+  header * {
+    transition: all ease-in-out 0.2s;
+  }
+  header,
+  header nav,
+  header nav .container .content-menu {
+    height: max-content !important;
+  }
+  header nav .container .content-menu ul#nav-mobile,
+  header nav .container .content-menu ul#nav-mobile li {
+    display: block;
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  header nav .container .content-menu ul#nav-mobile {
+    height: 0px !important;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-content: center;
+  }
+  header nav .container .content-menu ul#nav-mobile li {
+    width: max-content;
+    padding: 10px 0;
+  }
+  header nav .container .content-menu ul#nav-mobile li a {
+    font-size: 1.8rem;
+  }
+  header nav .container .content-menu .brand-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .show-menu {
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 59%,
+      rgba(178, 178, 178, 0) 76%,
+      rgba(69, 69, 69, 0.55) 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      left bottom,
+      color-stop(59%, rgba(255, 255, 255, 0)),
+      color-stop(76%, rgba(178, 178, 178, 0)),
+      color-stop(100%, rgba(69, 69, 69, 0.55))
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 59%,
+      rgba(178, 178, 178, 0) 76%,
+      rgba(69, 69, 69, 0.55) 100%
+    );
+    background: -o-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 59%,
+      rgba(178, 178, 178, 0) 76%,
+      rgba(69, 69, 69, 0.55) 100%
+    );
+    background: -ms-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 59%,
+      rgba(178, 178, 178, 0) 76%,
+      rgba(69, 69, 69, 0.55) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 59%,
+      rgba(178, 178, 178, 0) 76%,
+      rgba(69, 69, 69, 0.55) 100%
+    );
+  }
+  .show-menu .brand-toggle {
+    width: 100%;
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .show-menu .brand-logo {
+    margin: 20px 0;
+  }
+  .show-menu .brand-logo img {
+    height: 40px;
+  }
+  .show-menu .container .content-menu ul#nav-mobile {
+    height: calc(100vh - 200px) !important;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-content: center;
+    overflow-y: auto;
+  }
+  header nav .container .content-menu ul#nav-mobile li {
+    width: max-content;
+    padding: 10px 0;
+  }
+  header nav .container .content-menu ul#nav-mobile li a {
+    font-size: 1.8rem;
+  }
+  .redes-header {
+    width: 100% !important;
+  }
+  .redes-header img {
+    width: 25px;
+  }
+  .redes-header a {
+    line-height: 50px;
+  }
+  .show-menu .sidenav-trigger::before {
+    font-family: "Material Icons";
+    content: "close";
+    position: relative;
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(180deg);
+    transition: all ease 0.2s;
+    color: #333;
+  }
 }
 
-@media(max-width:599px) {
-    header nav .brand-logo img {
-        height: 40px;
-    }
-    footer .copy {
-        width: 100%;
-        text-align: center;
-        display: block
-    }
-    footer .right {
-        float: none;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0;
-    }
+@media (max-width: 599px) {
+  header nav .brand-logo img {
+    height: 40px;
+  }
+  footer .copy {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  footer .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
 }
 
-@media(max-width:359px) {
-    header nav .brand-logo img {
-        height: 30px;
-    }
-    header,
-    header nav,
-    header nav .container .content-menu {
-        height: 65px;
-    }
+@media (max-width: 359px) {
+  header nav .brand-logo img {
+    height: 30px;
+  }
+  header,
+  header nav,
+  header nav .container .content-menu {
+    height: 65px;
+  }
 }
